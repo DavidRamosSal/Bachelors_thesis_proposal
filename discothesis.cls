@@ -109,12 +109,13 @@
 \usepackage{todonotes}
 
 % Defines to specific todo commands
-\setlength{\marginparwidth}{1.5cm}
+\setlength{\marginparwidth}{3.5cm}
 \newcommand{\TODO}[1]
-{\todo[prepend, caption={\textbf{Todo}}, size=\footnotesize]{\renewcommand{\baselinestretch}{0.85} \selectfont#1\par}}
+{\todo[prepend, caption={\textbf{Todo}}, size=\footnotesize]{\renewcommand{\baselinestretch}{0.8} \selectfont#1\par}}
 \newcommand{\REMARK}[1]
 {\todo[prepend, color=green, caption={\textbf{Remark}}, size=\footnotesize]{\renewcommand{\baselinestretch}{0.85} \selectfont#1\par}}
 }
+\reversemarginpar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
