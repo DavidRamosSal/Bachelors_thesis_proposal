@@ -1,0 +1,91 @@
+\documentclass[a4paper, oneside,openany]{discothesis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{anysize}
+\marginsize{4cm}{2cm}{3cm}{3cm}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %footnote counting per page
+
+%additional packages
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{bm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT METADATA
+
+\thesistype{PROPUESTA DE TESIS PARA OPTAR AL TÍTULO DE FÍSICO} % Master's Thesis, Bachelor's Thesis, Semester Thesis, Group Project
+\title{ESTRUCTURA ESTELAR DE OBJETOS COMPACTOS CON UNA ECUACIÓN DE ESTADO NUMÉRICA}
+
+\author{DAVID LEONARDO RAMOS SALAMANCA}
+\email{}%david.ramos.salamanca@outlook.com}
+
+\institute{%Grupo de Investigación en Relatividad y Gravitación  \\[2pt]
+ESCUELA DE FÍSICA \\[2pt]
+FACULTAD DE CIENCIAS \\[2pt]
+UNIVERSIDAD INDUSTRIAL DE SANTANDER \\[2pt]
+BUCARAMANGA \\[2pt]
+2018}
+
+% Optionally, you can put in your own logo here
+%\logo{\includegraphics[width=0.4\columnwidth]{figures/uislogo}}
+
+\supervisors{LUIS A. NÚÑEZ DE VILLAVICENCIO MARTÍNEZ}
+\cosupervisors{HÉCTOR HERNÁNDEZ}
+
+
+% Optionally, titleabs, authorabs, keywords and categories of the work can be shown (on the Abstract page)
+\keywords{Estructura estelar, ecuación de estado numérica}
+\titleabs{Estructura estelar de objetos compactos con una ecuación de estado numérica\footnote{Propuesta de trabajo de grado}} %Title for abstract
+\authorabs{David Leonardo Ramos Salamanca\footnote{Facultad de Ciencias. Escuela de física. Director: Luis A. Núñez de Villavicencio Martínez}} %Author for abstract
+%\categories{ACM categories go here.}
+
+%Información para abstract en otro idioma----------------------- 
+\keywordss{Stellar structure, numerical equation of state}
+\titleabss{Stellar structure of compact objects with a numerical equation of state\footnote{Bachellor thesis}} %Title for abstract
+\authorabss{David Leonardo Ramos Salamanca\footnote{Facultad de Ciencias. Escuela de física. Adviser: Luis A. Núñez de Villavicencio Martínez}}
+
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\frontmatter % do not remove this line
+\maketitle
+
+\cleardoublepage
+
+\input{content/acknowledgments.tex}
+
+\input{content/abstract.tex}
+
+
+
+\tableofcontents
+
+\mainmatter % do not remove this line
+
+% Start writing here-------------------------------------------
+
+\input{content/chapters/chapter1.tex}
+\input{content/chapters/chapter2.tex}
+\input{content/chapters/chapter3.tex}
+\input{content/chapters/chapter4.tex}
+\input{content/chapters/chapter5.tex}
+
+
+
+
+
+% This displays the bibliography for all cited external documents. All references have to be defined in the file references.bib and can then be cited from within this document.
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+% This creates an appendix chapter, comment if not needed.
+\appendix
+
+\input{content/appendices/appendix1.tex}
+
+\end{document}
