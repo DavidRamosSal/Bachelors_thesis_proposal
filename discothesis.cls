@@ -367,7 +367,7 @@
         
         \begin{center}
           DIRECTOR: \\[2pt] \@supervisors \\[10pt]
-			CO-DIRECTOR: \\[2pt] \@cosupervisors
+		%	CO-DIRECTOR: \\[2pt] \@cosupervisors
 		\end{center}
 
         \vfill
