@@ -856,7 +856,7 @@
 \def\fps@figure{tbp}
 \def\ftype@figure{1}
 \def\ext@figure{lof}
-\def\fnum@figure{\figurename\nobreakspace\thefigure}
+\def\fnum@figure{\textbf{\figurename\nobreakspace\thefigure}}
 \newenvironment{figure}
                {\@float{figure}}
                {\end@float}
