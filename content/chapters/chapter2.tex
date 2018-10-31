@@ -38,14 +38,15 @@ El radio de la estrella $R$ se define como el valor de $r$ en el que la presión
 
 Aunque no se van a tratar en el trabajo de grado, cabe resaltar que los objetos compactos conocidos como enanas blancas, sostenidas al igual que las estrellas de neutrones por la presión de degeneración no de neutrones sino de electrones, son bien descritas por las ecuaciones de estructura Newtonianas. Una manera, aunque no la única, de conocer la importancia de las correcciones relativistas es comparando la magnitud del potencial gravitacional con la unidad, con masas en un rango de $0.33\,M_{\odot}$ $1.52\,M_{\odot}$ y radios típicos de unos cuantos miles de kilómetros \cite{Glendenning2000CompactStars}, para las enanas blancas se cumple
 \begin{equation}
-    \frac{2GM}{R}\ll 1,
+    \frac{2GM}{c^2R}\ll 1,
 \end{equation}
 por lo cual se espera que el tratamiento Newtoniano sea suficiente \cite{Weinberg1972GravitationCosmology}. \TODO{Pulir último párrafo, parece redundante.}
 
 \section{Estructura estelar relativista}
+
 Si bien en la teoría Newtoniana podrían existir objetos tan compactos como las estrellas de neutrones, Chandrasekhar encontró que las estrellas soportadas por presión de degeneración tienen una masa máxima, obtenida asintóticamente cuando los Fermiones son altamente relativistas, esto es, cuando tienen velocidades comparables con la velocidad de la luz. Bajo tales condiciones existirían estrellas compuestas por los quarks más pesados (charm, bottom y top), que no son realizables en relatividad general debido a que las estrellas con la máxima masa posible no son lo suficientemente densas \cite{Glendenning2000CompactStars}.
 
-Es por predicciones erróneas como la anterior que la relatividad general es necesaria para el estudio de objetos compactos, siendo precisamente el descubrimiento de los pulsares, estrellas de neutrones altamente magnetizadas en rotación, en 1967 \cite{Hewish1968ObservationSource} lo que revitalizó el estudio de la relatividad general y la llevó a la frontera de la investigación en física.
+Es por predicciones erróneas como la anterior que la relatividad general es necesaria para el estudio de objetos compactos, siendo precisamente el descubrimiento de los pulsares, estrellas de neutrones altamente magnetizadas en rotación, en 1967 \cite{Hewish1968ObservationSource} lo que revitalizó el estudio de la relatividad general y la llevó a la frontera de la investigación en física.\REMARK{Esto se podría trasladar a la introducción.}
 
 Para describir la estructura de una estrella estática en relatividad general se supone un espacio-tiempo estático e isótropo descrito de manera general por la métrica asociada al elemento de línea:
 
@@ -54,7 +55,7 @@ Para describir la estructura de una estrella estática en relatividad general se
 \end{equation}
 
 Además el espacio-tiempo se dividirá en dos: una región exterior a la estrella y una región interior. 
-La \textit{región exterior} es libre de fuentes ($T _ { \mu } ^ { \nu }=0$) y las ecuaciones de Einstein en esta, en unidades gravitacionales ($G=c=1$), son 
+La \textit{región exterior} es libre de fuentes ($T _ { \mu } ^ { \nu }=0$) y las ecuaciones de Einstein para esta, en unidades gravitacionales ($G=c=1$), son 
 
 \begin{equation}
     G _ { \mu } ^ { \nu } = R _ { \mu } ^ { \nu } - \frac { 1 } { 2 } g _ { \mu } ^ { \nu } R = 8 \pi T _ { \mu } ^ { \nu }=0,
@@ -67,12 +68,12 @@ donde $M$ es una constante de integración interpretada como la masa de la estre
 \begin{equation}
     \dd s ^ { 2 } =  \left( 1 - \frac { 2 M } { r } \right) \dd t ^ { 2 } - \left( 1 - \frac { 2 M } { r } \right) ^ { - 1 } \dd r ^ { 2 }  - r ^ { 2 } \dd \theta ^ { 2 } - r ^ { 2 } \sin ^ { 2 } \theta \dd \phi ^ { 2 }, 
 \end{equation}
-valida para $r>R$, donde $R$ es el radio de la estrella, que describe la geometría del espacio-tiempo afuera de una estrella estática.
+valida para $r>R$, donde $R$ es el radio de la estrella, que describe la geometría del espacio-tiempo por fuera de una estrella estática.
 
 Para la \textit{región interior} el contenido material debe ser especificado para resolver las ecuaciones de Einstein, la materia se modela considerándola un fluido perfecto, con un tensor de energía-momento dado por
 
 \begin{equation}
-    \begin{array} { c } { T ^ { \mu \nu } = - P g ^ { \mu \nu } + ( P + \rho ) u ^ { \mu } u ^ { \nu } }, \\ \text{con} \quad { g _ { \mu \nu } u ^ { \mu } u ^ { \nu } = 1 } \end{array},
+    \begin{array} { c } { T ^ { \mu \nu } = - P g ^ { \mu \nu } + ( P + \rho ) u ^ { \mu } u ^ { \nu } }, \\ \text{con} \quad { g _ { \mu \nu } u ^ { \mu } u ^ { \nu } = 1 }, \end{array}
 \end{equation}
 donde $u^{\mu}=\dv{x^{\mu}}{\tau}$ es la cuadri-velocidad de un elemento del fluido. Este tensor puede ser escrito en términos de los valores locales de presión $P$ y densidad de energía $\rho$ gracias al Principio de Covariancia, consecuencia del Principio de Equivalencia \cite{Weinberg1972GravitationCosmology}, que permite escribir el tensor-energía impulso en presencia de campos gravitacionales de una manera análoga a como se escribe en relatividad especial en ausencia de gravedad.
 
@@ -94,7 +95,7 @@ Teniendo en cuenta la forma del tensor energía-momento las ecuaciones de Einste
 tendrán componentes     
 
 \begin{equation}
-    \begin{array} { l } { G _ { 0 } ^ { 0 } = e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } - \frac { 2 \lambda ^ { \prime } } { r } \right) - \frac { 1 } { r ^ { 2 } } = - 8 \pi  \rho ( r ) } \\ { G _ { 1 } ^ { 1 } = e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } + \frac { 2 \nu ^ { \prime } } { r } \right) - \frac { 1 } { r ^ { 2 } } = 8 \pi  P ( r ) } \\ { G _ { 2 } ^ { 2 } = e ^ { - 2 \lambda } \left( \nu ^ { \prime \prime } + \nu ^ { \prime 2 } - \lambda ^ { \prime } \nu ^ { \prime } + \frac { \nu ^ { \prime } - \lambda ^ { \prime } } { r } \right) = 8 \pi  P ( r ) } \\ { G _ { 3 } ^ { 3 } = G _ { 2 } ^ { 2 } = 8 \pi  P ( r ) } \end{array}.
+    \begin{array} { l } { G _ { 0 } ^ { 0 } = e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } - \frac { 2 \lambda ^ { \prime } } { r } \right) - \frac { 1 } { r ^ { 2 } } = - 8 \pi  \rho ( r ) }, \\ { G _ { 1 } ^ { 1 } = e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } + \frac { 2 \nu ^ { \prime } } { r } \right) - \frac { 1 } { r ^ { 2 } } = 8 \pi  P ( r ) }, \\ { G _ { 2 } ^ { 2 } = e ^ { - 2 \lambda } \left( \nu ^ { \prime \prime } + \nu ^ { \prime 2 } - \lambda ^ { \prime } \nu ^ { \prime } + \frac { \nu ^ { \prime } - \lambda ^ { \prime } } { r } \right) = 8 \pi  P ( r ) }, \\ { G _ { 3 } ^ { 3 } = G _ { 2 } ^ { 2 } = 8 \pi  P ( r ) }. \end{array}
     \label{eee}
 \end{equation}
 Definiendo
@@ -102,21 +103,48 @@ Definiendo
     m ( r ) \equiv 4 \pi \int _ { 0 } ^ { r } \rho ( r ) r ^ { 2 } \dd r,
     \label{me}
 \end{equation}
-como la energía total encerrada por la coordenada $r$, se puede eliminar las funciones métricas de \eqref{eee}, expresándolas en términos de $P$, $\rho$ y $m$ para obtener 
+como la energía total encerrada por la coordenada $r$, o masa gravitacional, se puede eliminar las funciones métricas de \eqref{eee}, expresándolas en términos de $P$, $\rho$ y $m$ para obtener 
 
 \begin{equation}
     \frac { d P } { d r } = - \frac { [ P ( r ) + \rho ( r ) ] \left[ m ( r ) + 4 \pi r ^ { 3 } P ( r ) \right] } { r [ r - 2 m ( r ) ] }
+    \label{dptov}
 \end{equation}
 
 que junto a \eqref{me}, escrita como
 
-\TODO{Aclarar la diferencia entre la masa encerrada y la energía total.}
+\REMARK{¿Aclarar la diferencia entre la masa encerrada y la energía total?}
 \begin{equation}
     \frac { \mathrm { d } m } { \mathrm { d } r } = 4 \pi r ^ { 2 } \rho(r),
+    \label{dmtov}
 \end{equation}
 son las ecuaciones de estructura estelar relativista y son la reducción de las ecuaciones de Einstein para el interior de una estrella esférica y estática. Este sistema es conocido como las ecuaciones de Tolman-Oppenheimer-Volkoff (TOV).
-\TODO{Interpretación del sistema como la versión relativista de lo estudiado en el caso Newtoniano.}
-\TODO{Poner $\nu$ y hablar de acople con la solución exterior.}
+
+Re-escribiendo \eqref{dptov} como (incluyendo los factores de $G$ y $c$ correspondientes)
+\begin{equation}
+    \frac { d P } { d r } =  - \frac { G  m ( r ) } { r ^ { 2 } } \rho ( r ) \left[ 1 + \frac { P ( r ) } {c ^ { 2 } \rho ( r ) } \right] \left[ 1 + \frac { 4 \pi r ^ { 3 } P ( r ) } { m ( r ) c ^ { 2 } } \right]  \left[ 1 - \frac { 2 G m ( r ) } { c ^ { 2 } r } \right] ^ { - 1 }, 
+    \label{dprelat}
+\end{equation}
+se puede reconocer a \eqref{dpnewton}, la ecuación de equilibrio hidrostático Newtoniana, como el límite de \eqref{dprelat} cuando 
+\begin{equation}
+    c^2\rho \gg P \qc mc^2 \gg 4\pi r^3P \quad \text{y} \quad  \frac{2Gm}{c^2r}\ll 1,
+\end{equation}
+así mismo, encontrar esta correspondencia nos permite interpretar a \eqref{dprelat} como la ecuación de equilibrio hidrostático relativista, la cual expresa el \textit{balance} entre la fuerza neta sobre un elemento de masa debido a la presión de la materia que la rodea y la atracción gravitacional de la materia interior al elemento de masa. El hecho de que, además de la densidad de energía, la presión actúe como una fuente de atracción gravitacional es la razón por la cual el colapso gravitacional es intrínseco a la estructura de la relatividad general pues mientras en las estrellas Newtonianas la presión actuaba para sostener a la estrella, si la estrella es lo suficiente masiva el colapso es inevitable en relatividad general.
+
+Las ecuaciones de TOV \eqref{dptov} y \eqref{dmtov}, pueden ser resueltas de manera análoga a las ecuaciones de estructura Newtonianas. Dada una ecuación de estado $P(\rho)$ y partiendo de las condiciones iniciales $m(r=0)=0$ y $P(r=0)=P(\rho_c)$, el sistema se puede integrar hasta que la presión se anule, lo que indica el borde de la estrella y define el radio $R$ y la masa gravitacional $M$, $m(R)=M$ de la estrella. 
+
+La función métrica $\nu$ puede ser hallada añadiendo al sistema la ecuación diferencial
+
+\begin{equation}
+    \frac { d \nu } { d r } = \frac { m ( r ) + 4 \pi r ^ { 3 } P ( r ) } { r [ r - 2 m ( r ) ] },
+\end{equation}
+cuya solución debe coincidir con la solución externa en $R$, por lo que se usa la libertad de sumar una constante para hacer el cambio
+\begin{equation}
+    \nu ( r ) \longrightarrow \nu ( r ) - \nu ( R ) + \frac { 1 } { 2 } \ln \left( 1 - \frac { 2 M } { R } \right) , \quad r \leq R,
+\end{equation}
+más una condición inicial, generalmente $\nu(r=0)=0$.
+
+
+
 
 \section{Estructura interna de objetos compactos y ecuaciones de estado}
 
