@@ -210,6 +210,8 @@
 \newcommand\thesistype[1]{\gdef \@thesistype{#1}}  % tobias
 \newcommand\logo[1]{\gdef\@logo{#1}} % tobias
 
+
+
 \logo{}
 \keywords{}
 \categories{}
@@ -472,6 +474,7 @@
    \hskip 1sp \marginpar{\footnotesize\sffamily\raggedright
    \color{blue}#1\\$\spadesuit$}}
 
+\newcommand{\com}[1]{``#1''}
 
 
 % \newtheorem{theorem}{Theorem}										%kai

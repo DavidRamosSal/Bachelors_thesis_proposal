@@ -28,25 +28,25 @@ Si la presión en $\vec{r}$ es $P$ y su cambio al ir de $\vec{r}$ a $\vec{r}+\ma
 \end{equation}
 o equivalentemente
 \begin{equation}
-    \frac { d P } { d r } = - \frac { G m ( r ) } { r ^ { 2 } } \rho.
+    \frac { \dd P } { \dd r } = - \frac { G m ( r ) } { r ^ { 2 } } \rho.
     \label{dpnewton}
 \end{equation}
 
-Las ecuaciones \eqref{dmnewton} y \eqref{dpnewton} son las ecuaciones de estructura estelar Newtonianas \cite{Chandrasekhar1958AnStructure}, si una relación entre la presión y la densidad $P(\rho)$ es dada, es decir, una ecuación de estado, el sistema puede resolverse dado un par condiciones iniciales $m(r=0)$ y $P(r=0)$. La primera de estas condiciones es evidente puesto que no hay masa encerrada en un cascarón esférico de radio nulo, $m(r=0)=0$ y la segunda estará definida por el valor de $\rho(r=0)\equiv\rho_c$ escogido, mediante la ecuación de estado, $P(r=0)=P(\rho_c)$.
+Las ecuaciones \eqref{dmnewton} y \eqref{dpnewton} son las ecuaciones de estructura estelar Newtonianas \cite{Chandrasekhar1958}, si una relación entre la presión y la densidad $P(\rho)$ es dada, es decir, una ecuación de estado, el sistema puede resolverse dado un par condiciones iniciales $m(r=0)$ y $P(r=0)$. La primera de estas condiciones es evidente puesto que no hay masa encerrada en un cascarón esférico de radio nulo, $m(r=0)=0$ y la segunda estará definida por el valor de $\rho(r=0)\equiv\rho_c$ escogido, mediante la ecuación de estado, $P(r=0)=P(\rho_c)$.
 
 El radio de la estrella $R$ se define como el valor de $r$ en el que la presión se anula, esto es, $P(R)=0$ y de manera similar la masa de la estrella $M$ se define como el valor de la masa encerrada en $r=R$, esto es, $m(R)=M$.
 
-Aunque no se van a tratar en el trabajo de grado, cabe resaltar que los objetos compactos conocidos como enanas blancas, sostenidas al igual que las estrellas de neutrones por la presión de degeneración no de neutrones sino de electrones, son bien descritas por las ecuaciones de estructura Newtonianas. Una manera, aunque no la única, de conocer la importancia de las correcciones relativistas es comparando la magnitud del potencial gravitacional con la unidad, con masas en un rango de $0.33\,M_{\odot}$ $1.52\,M_{\odot}$ y radios típicos de unos cuantos miles de kilómetros \cite{Glendenning2000CompactStars}, para las enanas blancas se cumple
+Aunque no se van a tratar en el trabajo de grado, cabe resaltar que los objetos compactos conocidos como enanas blancas, sostenidas al igual que las estrellas de neutrones por la presión de degeneración no de neutrones sino de electrones, son bien descritas por las ecuaciones de estructura Newtonianas. Una manera, aunque no la única, de conocer la importancia de las correcciones relativistas es comparando la magnitud del potencial gravitacional con la unidad, con masas en un rango de $0.33\,M_{\odot}$ $1.52\,M_{\odot}$ y radios típicos de unos cuantos miles de kilómetros \cite{Glendenning2000}, para las enanas blancas se cumple
 \begin{equation}
     \frac{2GM}{c^2R}\ll 1,
 \end{equation}
-por lo cual se espera que el tratamiento Newtoniano sea suficiente \cite{Weinberg1972GravitationCosmology}. \TODO{Pulir último párrafo, parece redundante.}
+por lo cual se espera que el tratamiento Newtoniano sea suficiente \cite{Weinberg1972}. \TODO{Pulir último párrafo, parece redundante.}
 
 \section{Estructura estelar relativista}
 
-Si bien en la teoría Newtoniana podrían existir objetos tan compactos como las estrellas de neutrones, Chandrasekhar encontró que las estrellas soportadas por presión de degeneración tienen una masa máxima, obtenida asintóticamente cuando los Fermiones son altamente relativistas, esto es, cuando tienen velocidades comparables con la velocidad de la luz. Bajo tales condiciones existirían estrellas compuestas por los quarks más pesados (charm, bottom y top), que no son realizables en relatividad general debido a que las estrellas con la máxima masa posible no son lo suficientemente densas \cite{Glendenning2000CompactStars}.
+Si bien en la teoría Newtoniana podrían existir objetos tan compactos como las estrellas de neutrones, Chandrasekhar encontró que las estrellas soportadas por presión de degeneración tienen una masa máxima, obtenida asintóticamente cuando los Fermiones son altamente relativistas, esto es, cuando tienen velocidades comparables con la velocidad de la luz. Bajo tales condiciones existirían estrellas compuestas por los quarks más pesados (charm, bottom y top), que no son realizables en relatividad general debido a que las estrellas con la máxima masa posible no son lo suficientemente densas \cite{Glendenning2000}.
 
-Es por predicciones erróneas como la anterior que la relatividad general es necesaria para el estudio de objetos compactos, siendo precisamente el descubrimiento de los pulsares, estrellas de neutrones altamente magnetizadas en rotación, en 1967 \cite{Hewish1968ObservationSource} lo que revitalizó el estudio de la relatividad general y la llevó a la frontera de la investigación en física.\REMARK{Esto se podría trasladar a la introducción.}
+Es por predicciones erróneas como la anterior que la relatividad general es necesaria para el estudio de objetos compactos, siendo precisamente el descubrimiento de los pulsares, estrellas de neutrones altamente magnetizadas en rotación, en 1967 \cite{Hewish1968} lo que revitalizó el estudio de la relatividad general y la llevó a la frontera de la investigación en física.\REMARK{Esto se podría trasladar a la introducción.}
 
 Para describir la estructura de una estrella estática en relatividad general se supone un espacio-tiempo estático e isótropo descrito de manera general por la métrica asociada al elemento de línea:
 
@@ -75,7 +75,7 @@ Para la \textit{región interior} el contenido material debe ser especificado pa
 \begin{equation}
     \begin{array} { c } { T ^ { \mu \nu } = - P g ^ { \mu \nu } + ( P + \rho ) u ^ { \mu } u ^ { \nu } }, \\ \text{con} \quad { g _ { \mu \nu } u ^ { \mu } u ^ { \nu } = 1 }, \end{array}
 \end{equation}
-donde $u^{\mu}=\dv{x^{\mu}}{\tau}$ es la cuadri-velocidad de un elemento del fluido. Este tensor puede ser escrito en términos de los valores locales de presión $P$ y densidad de energía $\rho$ gracias al Principio de Covariancia, consecuencia del Principio de Equivalencia \cite{Weinberg1972GravitationCosmology}, que permite escribir el tensor-energía impulso en presencia de campos gravitacionales de una manera análoga a como se escribe en relatividad especial en ausencia de gravedad.
+donde $u^{\mu}=\dv{x^{\mu}}{\tau}$ es la cuadri-velocidad de un elemento del fluido. Este tensor puede ser escrito en términos de los valores locales de presión $P$ y densidad de energía $\rho$ gracias al Principio de Covariancia, consecuencia del Principio de Equivalencia \cite{Weinberg1972}, que permite escribir el tensor-energía impulso en presencia de campos gravitacionales de una manera análoga a como se escribe en relatividad especial en ausencia de gravedad.
 
 Como se considera una estrella estática, la velocidad espacial de todos los elementos del fluido son cero:
 \begin{equation}
@@ -106,7 +106,7 @@ Definiendo
 como la energía total encerrada por la coordenada $r$, o masa gravitacional, se puede eliminar las funciones métricas de \eqref{eee}, expresándolas en términos de $P$, $\rho$ y $m$ para obtener 
 
 \begin{equation}
-    \frac { d P } { d r } = - \frac { [ P ( r ) + \rho ( r ) ] \left[ m ( r ) + 4 \pi r ^ { 3 } P ( r ) \right] } { r [ r - 2 m ( r ) ] }
+    \frac { \dd P } { \dd r } = - \frac { [ P ( r ) + \rho ( r ) ] \left[ m ( r ) + 4 \pi r ^ { 3 } P ( r ) \right] } { r [ r - 2 m ( r ) ] }
     \label{dptov}
 \end{equation}
 
@@ -121,23 +121,23 @@ son las ecuaciones de estructura estelar relativista y son la reducción de las 
 
 Re-escribiendo \eqref{dptov} como (incluyendo los factores de $G$ y $c$ correspondientes)
 \begin{equation}
-    \frac { d P } { d r } =  - \frac { G  m ( r ) } { r ^ { 2 } } \rho ( r ) \left[ 1 + \frac { P ( r ) } {c ^ { 2 } \rho ( r ) } \right] \left[ 1 + \frac { 4 \pi r ^ { 3 } P ( r ) } { m ( r ) c ^ { 2 } } \right]  \left[ 1 - \frac { 2 G m ( r ) } { c ^ { 2 } r } \right] ^ { - 1 }, 
+    \frac { \dd P } { \dd r } =  - \frac { G  m ( r ) } { r ^ { 2 } } \rho ( r ) \left[ 1 + \frac { P ( r ) } {c ^ { 2 } \rho ( r ) } \right] \left[ 1 + \frac { 4 \pi r ^ { 3 } P ( r ) } { m ( r ) c ^ { 2 } } \right]  \left[ 1 - \frac { 2 G m ( r ) } { c ^ { 2 } r } \right] ^ { - 1 }, 
     \label{dprelat}
 \end{equation}
 se puede reconocer a \eqref{dpnewton}, la ecuación de equilibrio hidrostático Newtoniana, como el límite de \eqref{dprelat} cuando 
 \begin{equation}
     c^2\rho \gg P \qc mc^2 \gg 4\pi r^3P \quad \text{y} \quad  \frac{2Gm}{c^2r}\ll 1,
 \end{equation}
-así mismo, encontrar esta correspondencia nos permite interpretar a \eqref{dprelat} como la ecuación de equilibrio hidrostático relativista, la cual expresa el \textit{balance} entre la fuerza neta sobre un elemento de masa debido a la presión de la materia que la rodea y la atracción gravitacional de la materia interior al elemento de masa. El hecho de que, además de la densidad de energía, la presión actúe como una fuente de atracción gravitacional es la razón por la cual el colapso gravitacional es intrínseco a la estructura de la relatividad general pues mientras en las estrellas Newtonianas la presión actuaba para sostener a la estrella, si la estrella es lo suficiente masiva el colapso es inevitable en relatividad general.
+así mismo, encontrar esta correspondencia nos permite interpretar a \eqref{dprelat} como la ecuación de equilibrio hidrostático relativista, la cual expresa el \textit{balance} entre la fuerza neta sobre un elemento de masa debido a la presión de la materia que la rodea y la atracción gravitacional de la materia interior al elemento de masa. El hecho de que, además de la densidad de energía, la presión actúe como una fuente de atracción gravitacional es la razón por la cual el colapso gravitacional es intrínseco a la estructura de la relatividad general pues mientras en las estrellas Newtonianas la presión actuaba para sostener a la estrella, si la estrella es lo suficiente masiva (presiones lo suficientemente grandes) el colapso es inevitable.
 
-Las ecuaciones de TOV \eqref{dptov} y \eqref{dmtov}, pueden ser resueltas de manera análoga a las ecuaciones de estructura Newtonianas. Dada una ecuación de estado $P(\rho)$ y partiendo de las condiciones iniciales $m(r=0)=0$ y $P(r=0)=P(\rho_c)$, el sistema se puede integrar hasta que la presión se anule, lo que indica el borde de la estrella y define el radio $R$ y la masa gravitacional $M$, $m(R)=M$ de la estrella. 
+Las ecuaciones de TOV \eqref{dptov} y \eqref{dmtov}, pueden ser resueltas de manera análoga a las ecuaciones de estructura Newtonianas. Dada una ecuación de estado $P(\rho)$ y partiendo de las condiciones iniciales $m(r=0)=0$ y $P(r=0)=P(\rho_c)$, el sistema se puede integrar hasta que la presión se anule, lo que indica el borde de la estrella y define el radio $R$ y la masa gravitacional $m(R)=M$ de la estrella. 
 
 La función métrica $\nu$ puede ser hallada añadiendo al sistema la ecuación diferencial
 
 \begin{equation}
     \frac { d \nu } { d r } = \frac { m ( r ) + 4 \pi r ^ { 3 } P ( r ) } { r [ r - 2 m ( r ) ] },
 \end{equation}
-cuya solución debe coincidir con la solución externa en $R$, por lo que se usa la libertad de sumar una constante para hacer el cambio
+cuya solución debe coincidir con la solución externa en $R$, por lo que se usa la libertad de sumar una constante para realizar el siguiente cambio
 \begin{equation}
     \nu ( r ) \longrightarrow \nu ( r ) - \nu ( R ) + \frac { 1 } { 2 } \ln \left( 1 - \frac { 2 M } { R } \right) , \quad r \leq R,
 \end{equation}
@@ -146,19 +146,48 @@ más una condición inicial, generalmente $\nu(r=0)=0$.
 
 
 
-\section{Estructura interna de objetos compactos y ecuaciones de estado}
+\section{Estructura interna y composición de estrellas de neutrones}
+
+El comportamiento preciso de la materia nuclear en condiciones tan extremas como las encontradas en el interior de una estrella de neutrones (densidades mayores a $\rho_0$) es desconocida y fuera de las capacidades experimentales actuales, las estrellas de neutrones se han convertido pues en laboratorios de materia nuclear densa y son un tema de interés en el campo de la astrofísica nuclear.\REMARK{Se puede pasar a la introducción} 
+
+La composición de las estrellas de neutrones, contrario a lo que el nombre sugiere, se presume es muy rica y varía a lo largo de su extensión radial, esta variada composición y las distintas fases que exhiben están distribuidas en una estructura de cascarones, denominada generalmente una red cristalina de Coulomb (ver Figura \ref{NSC}).
+La superficie de la estrella está rodeada por una \emph{atmósfera} compuesta principalmente de hidrógeno, helio y hierro, aunque se ha encontrado carbono en una \cite{Ho2009ARemnant}, en estado gaseoso o condensado dependiendo de la temperatura superficial y el campo magnético de la estrella \cite{Zavlin2002ModelingAtmospheres}. La atmósfera es importante porque es donde se forma el espectro de radiación electromagnética de las estrellas y esta porta información acerca de su composición, temperatura y campo magnético. \TODO{Refinar la presentación de las ideas.}
+Debajo de la atmósfera se encuentra una \emph{envoltura} de aproximadamente 100 \si{\metre}, a veces llamado océano. Compuesta presuntamente de núcleos alrededor del pico del hierro en un estado condensado, la envoltura influencia el transporte y emisión de energía térmica desde la superficie \cite{Piekarewicz2013,Potekhin,Lattimer2004}.
+
+La envoltura encierra a cuatro regiones internas: la corteza exterior e interior y el núcleo exterior e interior. La \emph{corteza} es una capa en la que se encuentra materia con densidades sub-nucleares ($\rho < \rho_0$). En la \emph{corteza exterior} los electrones presentes, requeridos para la neutralidad de carga de la estrella, forman un gas de Fermi y ocurre un proceso de neutronización donde los electrones son capturados por protones para crear neutrones. La división con la \emph{corteza interior} se presenta debido a que a una densidad $\rho_{ND}\simeq 10^{14}\, \si{\gram\per\centi\metre^2}$ (neutron drip density), los neutrones comienzan a \com{gotear} del núcleo, por lo que hay presencia de neutrones libres, que pueden llegar a condensarse en un superfluido. En el fondo de la corteza, cuando la densidad se acerca a $\rho_0$, se ha predicho la presencia de fases conocidas como \com{pasta} nuclear, en las que, debido a la compresión, los núcleos se deforman y dejan de ser esféricos (para una revisión de la corteza de las estrellas de neutrones consultar \cite{Chamel2008} y referencias allí citadas). 
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=200pt]{figures/neutronstar.pdf}
-    \caption{Estructura interna de una estrella de neutrones}
+    \includegraphics[width=300pt]{figures/neutronstar.pdf}
+    \caption{Composición de una estrella de neutrones.\protect\footnotemark}
+    \label{NSC}
+\end{figure}
+
+\footnotetext{Original: Figura 1 de \cite{Weber2012}}
+
+
+El \emph{núcleo} comprende regiones en las que la densidad alcanza la densidad nuclear $\rho_0$ y contiene la mayor fracción de la masa estelar. Está subdividido un dos: el \emph{núcleo exterior}, con densidad $\num{0.5}\rho_0\lesssim\rho\lesssim 2\rho_0$  cuya composición se conoce bien cualitativamente \cite{Haensel2007NeutronStructure}, es un superfluido de neutrones y protones, con presencia de electrones y muones altamente degenerados; del \emph{núcleo interior} por el contrario no se conoce su composición, se ha sugerido la presencia de hiperones, piones, kaones e incluso quarks desconfinados (consultar las revisiones \cite{Lattimer2004,Potekhin} y referencias allí citadas).
+
+
+La gran variedad de fases que surgen a medida de que la densidad aumenta en el interior de las estrellas de neutrones están ilustradas en la Figura \ref{NSS}.     
+
+\subsection{Ecuaciones de estado}
+\TODO{Mencionar ecuaciones de estado}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=400pt]{figures/Density.pdf}
+    \caption[Estructura interna de una estrella de neutrones]{Estructura interna de una estrella de neutrones.\protect\footnotemark}
     \label{NSS}
 \end{figure}
-\TODO{Llenar la imagen.}
 
+\footnotetext{Original: Figura 4 de \cite{Chamel2008}}
 \section{Criterios de estabilidad}
 
 \subsection{Condición de estabilidad de Harrison-Zeldovich-Novikov}
+
+\TODO{Decidir qué incluir, no hay mucho de cómo se llega a esta condición. Sólo se menciona el análisis de modos radiales y se pasa de una a esto.}
 
 \begin{equation}
     \frac { \partial M \left( \rho _ { c } \right) } { \partial \rho _ { c } } > 0
@@ -166,7 +195,7 @@ más una condición inicial, generalmente $\nu(r=0)=0$.
 
 
 \subsection{Condición de estabilidad por convección adiabática}
-
+\TODO{Hablar un poco de convección, citar a Luis y poner la condición.}
 \begin{equation}
     \rho ^ { \prime \prime } ( r ) \leq 0
 \end{equation}
