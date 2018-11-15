@@ -191,17 +191,28 @@ Dependiendo de la ecuación de estado escogida, las ecuaciones de TOV \eqref{dmt
 
 \section{Criterios de estabilidad}
 
+Las soluciones a las ecuaciones de estructura relativistas \eqref{dmtov} y \eqref{dptov} corresponden a \hl{configuraciones} en equilibrio hidrostático, sin embargo el equilibrio puede ser estable o inestable y sólo objetos en equilibrio estable son de interés astrofísico. Determinar las condiciones para que una configuración en equilibrio sea estable es un problema complejo y es importante debido a que fija cotas inferiores y superiores en las masas de estrellas relativistas estables.
+
+La estabilidad se estudia en dos escalas distintas: una global y una local. En la escala global se analizan oscilaciones estelares mediante un esquema de perturbaciones dinámico, mientras que en la escala local se investiga el efecto de la convección (movimiento local de elementos de fluido) y el cracking (cambio de signo en la distribución de fuerzas que aparace al perturbar localmente el fluido). 
+\TODO{Citas de lugares donde traten los temas.}
+
+
 \subsection{Condición de estabilidad de Harrison-Zeldovich-Novikov}
-
-\TODO{Decidir qué incluir, no hay mucho de cómo se llega a esta condición. Sólo se menciona el análisis de modos radiales y se pasa de una a esto.}
+Cuando se considera la estabilidad global de una \hl{configuraci\'on} con simetría esférica se analiza cómo pulsaciones radiales pueden inducir el cuerpo a colapsar. La estabilidad en este método estará determinada por la frecuencia del modo fundamental de oscilación (ver \cite{Haensel2007NeutronStructure,Shapiro1983}), sin embargo una condición más práctica para determinar si una \hl{configuraci\'on} con simetría esférica es inestable globalmente es la conocida condición de Harrison-Zeldovich-Novikov\TODO{Cita.}, la cual enuncia que para una configuración sea estable respecto a oscilaciones radiales es \emph{necesario} que su masa $M$ aumente a medida de que la densidad central $\rho_{c}$ crece: 
 
 \begin{equation}
-    \frac { \partial M \left( \rho _ { c } \right) } { \partial \rho _ { c } } > 0
+    \frac { \partial M \left( \rho _ { c } \right) } { \partial \rho _ { c } } > 0.
 \end{equation}
+Además, los puntos en los que $\frac { \partial M \left( \rho _ { c } \right) } { \partial \rho _ { c } } = 0$ (puntos críticos) son puntos donde la \hl{configuraci\'on} pasa de estabilidad a inestabilidad.
+\REMARK{¿Quizá explicar que la variación de $\rho_c$ crea una familia de soluciones y mostrar el significado gráfico?}
 
 
-\subsection{Condición de estabilidad por convección adiabática}
-\TODO{Hablar un poco de convección, citar a Luis y poner la condición.}
+\subsection{Condición de estabilidad contra convección adiabática}
+
+La estabilidad contra convección se puede entender como sigue: cuando un elemento de fluido es desplazado hacia abajo, si su densidad aumenta más rápido que la densidad que lo rodea, el elemento se hundirá y la \hl{configuraci\'on} será inestable. Por otro lado, si la densidad del elemento de fluido es menor que la de su alrededor, flotará y la estrella será estable contra convección.
+
+En el caso en que la perturbación del elemento de fluido es adiabática (pasa en intervalos de tiempo muy pequeños comparados con los del flujo de calor) Nuñez et al. \cite{Hernandez2018} mostraron que para que el modelo estelar fuera estable contra movimientos convectivos, el perfil de densidad $\rho(r)$ debe cumplir el siguiente criterio: 
+
 \begin{equation}
-    \rho ^ { \prime \prime } ( r ) \leq 0
+    \rho ^ { \prime \prime } ( r ) \leq 0.
 \end{equation}
