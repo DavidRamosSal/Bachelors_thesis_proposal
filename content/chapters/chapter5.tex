@@ -1,1 +1,42 @@
 \chapter{Metodología}
+\setcounter{footnote}{0}
+Se propone la siguiente metodología para cumplir con los objetivos específicos planteados anteriormente:
+
+\begin{enumerate}
+    \item Reunir ecuaciones de estado para la materia densa en forma tabular de la literatura e interpolarlas.
+    \item Resolver las ecuaciones de TOV numéricamente para las diferentes ecuaciones de estado, usando en lo posible el ecosistema de software de código abierto para cómputo científico (SciPy\footnote{\url{https://www.scipy.org}}) de Python.
+    \item Variar la densidad central para obtener la familia de configuraciones en equilibrio asociada a la ecuación de estado y graficar las relaciones $M-R$ y $M-\rho_c$.
+    \item De la gráfica $M-\rho_c$ identificar los modelos que son inestables ante pulsaciones radiales.
+    \item Hallar la segunda derivada de los perfiles de densidad $\rho(r)$ numéricamente, para los modelos estables ante pulsaciones radiales con el fin de verificar su estabilidad ante convección adiabática. 
+\end{enumerate}
+\section{Cronograma}
+\definecolor{royalazure}{rgb}{0.0, 0.22, 0.66}
+\centering
+\noindent\resizebox{0.35\textwidth}{!}{
+\begin{ganttchart}[
+    canvas/.append style={line width=.60pt,dotted},
+    hgrid style/.style={line width=.60pt,dotted},
+    vgrid={*1{ line width=.60pt,dotted}},
+    title/.style={draw=none, fill=none},
+    title label font=\bfseries\footnotesize,
+    title label node/.append style={below=7pt},
+    include title in canvas=false,
+    group label font=\small\color{black},
+    bar/.append style={fill=royalazure},
+    group left shift=0,
+    group right shift=0,
+    bar height=.3,
+    group peaks tip position=0,
+    bar label node/.append style={left=0.6cm}
+  ]{1}{4}
+  \gantttitle[
+    title label node/.append style={below left=7pt and -7pt}
+  ]{\quad Mes:\quad 1}{1}
+  \gantttitlelist{2,...,4}{1} \\ 
+  \ganttbar{Actividad 1}{1}{1} \\[grid]
+  \ganttbar{Actividad 2}{1}{2} \\[grid]
+  \ganttbar{Actividad 3}{2}{3} \\[grid]
+  \ganttbar{Actividad 4}{3}{4} \\[grid]
+  \ganttbar{Actividad 5}{3}{4}
+\end{ganttchart}}
+

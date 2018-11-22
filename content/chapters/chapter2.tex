@@ -34,7 +34,7 @@ o equivalentemente
 
 Las ecuaciones \eqref{dmnewton} y \eqref{dpnewton} son las ecuaciones de estructura estelar Newtonianas \cite{Chandrasekhar1958}, si una relación entre la presión y la densidad $P(\rho)$ es dada, es decir, una ecuación de estado, el sistema puede resolverse dado un par condiciones iniciales $m(r=0)$ y $P(r=0)$. La primera de estas condiciones es evidente puesto que no hay masa encerrada en un cascarón esférico de radio nulo, $m(r=0)=0$ y la segunda estará definida por el valor de $\rho(r=0)\equiv\rho_c$ escogido, mediante la ecuación de estado, $P(r=0)=P(\rho_c)$.
 
-El radio de la estrella $R$ se define como el valor de $r$ en el que la presión se anula, esto es, $P(R)=0$ y de manera similar la masa de la estrella $M$ se define como el valor de la masa encerrada en $r=R$, esto es, $m(R)=M$.
+El radio de la estrella $R$ se define como el valor de $r$ en el que la presión se anula, esto es, $P(R)=0$ y de manera similar la masa de la estrella $M$ se define como el valor de la masa encerrada en $r=R$, esto es, $m(R)=M$.\REMARK{¿Debería poner de una vez la forma alternativa del sistema, en la que la variable independiente es $m$ (a la Lagrange)?}
 
 Aunque no se van a tratar en el trabajo de grado, cabe resaltar que los objetos compactos conocidos como enanas blancas, sostenidas al igual que las estrellas de neutrones por la presión de degeneración no de neutrones sino de electrones, son bien descritas por las ecuaciones de estructura Newtonianas. Una manera, aunque no la única, de conocer la importancia de las correcciones relativistas es comparando la magnitud del potencial gravitacional con la unidad, con masas en un rango de $0.33\,M_{\odot}$ $1.52\,M_{\odot}$ y radios típicos de unos cuantos miles de kilómetros \cite{Glendenning2000}, para las enanas blancas se cumple
 \begin{equation}
@@ -183,12 +183,11 @@ La gran variedad de fases que se encuentran a medida de que la densidad aumenta 
 \footnotetext{Original: Figura 4 de \cite{Chamel2008}}
 
 \subsection{Ecuaciones de estado}
-La composición de la estrella de neutrones entra en el cálculo de la estructura estelar mediante la ecuación de estado $P(\rho)$, cuya forma precisa dependerá de cómo se decida modelar los distintos sectores de la estrella de neutrones descritos anteriormente. Para la corteza exterior y parte de la interior (densidades $\rho\lesssim 10^{14}\, \si{\gram \per\centi\metre^{3}}$) la ecuación de estado puede ser deducida a partir de datos experimentales de núcleos atómicos, dispersión de nucleones y la teoría de sistemas Coulombianos, sin embargo para la parte baja de la corteza interior y el núcleo no hay datos experimentales disponibles y la ecuación de estado debe ser calculada teóricamente, razón por la cual la ecuación de estado de la materia ultra-densa es el mayor misterio de las estrellas de neutrones . 
+La composición de la estrella de neutrones entra en el cálculo de la estructura estelar mediante la ecuación de estado $P(\rho)$, encontrada en forma tabulada generalmente debido a que los programas diseñados para calcularla son muy elaborados y hacen poco práctico el cálculo en tiempo real, cuya forma precisa dependerá de cómo se decida modelar los distintos sectores de la estrella de neutrones descritos anteriormente. Para la corteza exterior y parte de la interior (densidades $\rho\lesssim 10^{14}\, \si{\gram \per\centi\metre^{3}}$) la ecuación de estado puede ser deducida a partir de datos experimentales de núcleos atómicos, dispersión de nucleones y la teoría de sistemas Coulombianos, sin embargo para la parte baja de la corteza interior y el núcleo no hay datos experimentales disponibles y la ecuación de estado debe ser calculada teóricamente, razón por la cual la ecuación de estado de la materia ultra-densa es el mayor misterio de las estrellas de neutrones . 
 
-Dependiendo de la ecuación de estado escogida, las ecuaciones de TOV \eqref{dmtov} y \eqref{dptov} darán diferentes valores de la masa máxima $M_{max}$ de las estrellas neutrones, cuyo interés astrofísico reside en que traza la línea divisoria entre las estrellas de neutrones y los agujeros negros. Un valor preciso de $M_{max}$ influye en la caracterización de remanentes de supernova y el estimado del número estrellas de neutrones y agujeros negros en la galaxia.    
+Dependiendo de la ecuación de estado escogida, las ecuaciones de TOV \eqref{dmtov} y \eqref{dptov} darán diferentes valores de la masa máxima $M_{max}$ de las estrellas neutrones, cuyo interés astrofísico reside en que traza la línea divisoria entre las estrellas de neutrones y los agujeros negros. El valor preciso de $M_{max}$ influye en la caracterización de remanentes de supernova y el estimado del número estrellas de neutrones y agujeros negros en la galaxia.    
 \TODO{Incluir más motivación: curvas de enfriamiento.}
 \REMARK{¿Valdrá la pena incluir algo sobre lo más específico: distintas interacciones, EOSs unificadas vs no-unificadas, $T=0$, etc?}
-
 \section{Criterios de estabilidad}
 
 Las soluciones a las ecuaciones de estructura relativistas \eqref{dmtov} y \eqref{dptov} corresponden a \hl{configuraciones} en equilibrio hidrostático, sin embargo el equilibrio puede ser estable o inestable y sólo objetos en equilibrio estable son de interés astrofísico. Determinar las condiciones para que una configuración en equilibrio sea estable es un problema complejo y es importante debido a que fija cotas inferiores y superiores en las masas de estrellas relativistas estables.
@@ -198,7 +197,7 @@ La estabilidad se estudia en dos escalas distintas: una global y una local. En l
 
 
 \subsection{Condición de estabilidad de Harrison-Zeldovich-Novikov}
-Cuando se considera la estabilidad global de una \hl{configuraci\'on} con simetría esférica se analiza cómo pulsaciones radiales pueden inducir el cuerpo a colapsar. La estabilidad en este método estará determinada por la frecuencia del modo fundamental de oscilación (ver \cite{Haensel2007NeutronStructure,Shapiro1983}), sin embargo una condición más práctica para determinar si una \hl{configuraci\'on} con simetría esférica es inestable globalmente es la conocida condición de Harrison-Zeldovich-Novikov\TODO{Cita.}, la cual enuncia que para una configuración sea estable respecto a oscilaciones radiales es \emph{necesario} que su masa $M$ aumente a medida de que la densidad central $\rho_{c}$ crece: 
+Cuando se considera la estabilidad global de una \hl{configuraci\'on} con simetría esférica se analiza cómo pulsaciones radiales pueden inducir el cuerpo a colapsar. La estabilidad en este método estará determinada por la frecuencia del modo fundamental de oscilación (ver \cite{Haensel2007NeutronStructure,Shapiro1983}), sin embargo una condición más práctica para determinar si una \hl{configuraci\'on} con simetría esférica es inestable globalmente es la conocida condición de Harrison-Zeldovich-Novikov\TODO{Cita.}, la cual enuncia que para una configuración sea estable respecto a oscilaciones radiales es \emph{necesario} que su masa $M$ aumente a medida que la densidad central $\rho_{c}$ crece: 
 
 \begin{equation}
     \frac { \partial M \left( \rho _ { c } \right) } { \partial \rho _ { c } } > 0.
@@ -212,7 +211,6 @@ Además, los puntos en los que $\frac { \partial M \left( \rho _ { c } \right) }
 La estabilidad contra convección se puede entender como sigue: cuando un elemento de fluido es desplazado hacia abajo, si su densidad aumenta más rápido que la densidad que lo rodea, el elemento se hundirá y la \hl{configuraci\'on} será inestable. Por otro lado, si la densidad del elemento de fluido es menor que la de su alrededor, flotará y la estrella será estable contra convección.
 
 En el caso en que la perturbación del elemento de fluido es adiabática (pasa en intervalos de tiempo muy pequeños comparados con los del flujo de calor) Nuñez et al. \cite{Hernandez2018} mostraron que para que el modelo estelar fuera estable contra movimientos convectivos, el perfil de densidad $\rho(r)$ debe cumplir el siguiente criterio: 
-
 \begin{equation}
     \rho ^ { \prime \prime } ( r ) \leq 0.
 \end{equation}

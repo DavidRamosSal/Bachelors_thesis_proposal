@@ -301,33 +301,33 @@
 %  \refstepcounter{part} 		%kai
 
 
-\begin{titlepage}
-    \noindent
+%\begin{titlepage}
+%    \noindent
+%    
+%    \vfill
+%
+%    \begin{center}
+%			\begin{spacing}{1}
+%			  \large \bfseries \@title
+%			\end{spacing}
+%    \end{center}
     
-    \vfill
+%    \vfill
+%    
+%    \begin{center}
+%			\large
+%			\@author
 
-    \begin{center}
-			\begin{spacing}{1}
-			  \large \bfseries \@title
-			\end{spacing}
-    \end{center}
-    
-    \vfill
-    
-    \begin{center}
-			\large
-			\@author
-
-			\texttt{\small \@email}
-	\end{center}
+%			\texttt{\small \@email}
+%	\end{center}
 	
-	\vfill
+%	\vfill
 	
-	\begin{center}
-			\@institute
-	\end{center}
+%	\begin{center}
+%			\@institute
+%	\end{center}
 
-\end{titlepage}
+%\end{titlepage}
 
 
   \begin{titlepage}%
@@ -651,11 +651,11 @@
 	\begin{flushleft}
 		\parindent \z@ \normalfont
     \ifnum \c@secnumdepth >\m@ne
-				\Large \textsc{\@chapapp} \space \thechapter
-				\par \nobreak
-		\fi
-		\interlinepenalty\@M
-		{\Huge \bfseries #1 \par\nobreak}
+			%	\Large \textsc{\@chapapp} \space \thechapter
+			%	\par \nobreak
+		%\fi
+		%\interlinepenalty\@M
+		{\Huge \bfseries \thechapter. \space #1 \par\nobreak}
 		\vskip 30\p@
 		\hrule
 		\vskip 50\p@
@@ -745,7 +745,7 @@
 
 \newenvironment{abstract}
 	{\chapter*{Resumen}
-	 {\textbf{T\'itulo:}} \@titleabs \\[9pt]
+	 {\noindent\textbf{T\'itulo:}} \@titleabs \\[9pt]
 	 {\textbf{Autor:}} \@authorabs \\[9pt]
 	 \ifx \@keywords \@empty
 		\relax
@@ -766,7 +766,7 @@
 	
 \newenvironment{abstract1}
 	{\chapter*{Abstract}
-	 {\textbf{Title:}} \@titleabss \\[9pt]
+	 {\noindent\textbf{Title:}} \@titleabss \\[9pt]
 	 {\textbf{Author:}} \@authorabss \\[9pt]
 	 \ifx \@keywords \@empty
 		\relax
