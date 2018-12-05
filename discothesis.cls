@@ -1062,6 +1062,7 @@
 \fi
 
 \addtolength{\textwidth}{21.4pt}	%kai
+\setlength{\parskip}{3pt}
 \endinput
 %%
 %% End of file `book.cls'.
