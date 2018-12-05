@@ -1,18 +1,20 @@
 \chapter{Metodología}
 \setcounter{footnote}{0}
-Se propone la siguiente metodología para cumplir con los objetivos específicos planteados anteriormente:
+Es importante resaltar que debido a que ecuaciones de TOV no se pueden resolver analíticamente y las ecuaciones de estado se encuentran tabuladas, la naturaleza del problema es computacional. 
+Se propone como metodología para cumplir con los objetivos específicos planteados anteriormente cumplir las siguienets actividades:
 
 \begin{enumerate}
-    \item Reunir ecuaciones de estado para la materia densa en forma tabular de la literatura e interpolarlas.
-    \item Resolver las ecuaciones de TOV numéricamente para las diferentes ecuaciones de estado, usando en lo posible el ecosistema de software de código abierto para cómputo científico (SciPy\footnote{\url{https://www.scipy.org}}) de Python.
-    \item Variar la densidad central para obtener la familia de configuraciones en equilibrio asociada a la ecuación de estado y graficar las relaciones $M-R$ y $M-\rho_c$.
-    \item De la gráfica $M-\rho_c$ identificar los modelos que son inestables ante pulsaciones radiales.
-    \item Hallar la segunda derivada de los perfiles de densidad $\rho(r)$ numéricamente, para los modelos estables ante pulsaciones radiales con el fin de verificar su estabilidad ante convección adiabática. 
+    \item Reunir ecuaciones de estado para la materia densa tabuladas de la literatura, necesarias para resolver las ecuaciones de TOV.
+    \item Interpolar las ecuaciones de estado manera óptima, explorando las distintas posibilidades.
+    \item Resolver las ecuaciones de TOV numéricamente para las diferentes ecuaciones de estado para obtener modelos de estrellas de neutrones estáticas. Se usará en lo posible el ecosistema de software de código abierto para cómputo científico (SciPy\footnote{\url{https://www.scipy.org}}) de Python.
+    \item Obtener las derivadas y segundas derivadas de los perfiles de densidad $\rho(r)$ y presión $P(r)$ obtenidos, lo cual permitirá evaluar la mayoría las condiciones de aceptabilidad física. 
+    \item Variar la densidad central para obtener la familia de configuraciones en equilibrio asociada a la ecuación de estado y graficar las relaciones $M-R$ y $M-\rho_c$, lo cual permitirá identificar la masa máxima de la familia de soluciones y evaluar la condición C10 respectivamente.
 \end{enumerate}
 \section{Cronograma}
 \definecolor{royalazure}{rgb}{0.0, 0.22, 0.66}
 \centering
-\noindent\resizebox{0.35\textwidth}{!}{
+\vspace{-0.5cm}
+\noindent\resizebox{0.28\textwidth}{!}{
 \begin{ganttchart}[
     canvas/.append style={line width=.60pt,dotted},
     hgrid style/.style={line width=.60pt,dotted},
@@ -39,4 +41,5 @@ Se propone la siguiente metodología para cumplir con los objetivos específicos
   \ganttbar{Actividad 4}{3}{4} \\[grid]
   \ganttbar{Actividad 5}{3}{4}
 \end{ganttchart}}
+\vspace{8cm}
 

@@ -213,12 +213,12 @@ FUNCTION {format.names}
 	{ namesleft #1 >
 	    { ", " * t * }
 	    { numnames #2 >
-		{ "," * }
+		{ " " * }
 		'skip$
 	      if$
 	      t "others" =
 		{ " {\em et~al.}" * }
-		{ " and " * t * }
+		{ " y " * t * }
 	      if$
 	    }
 	  if$
@@ -356,7 +356,7 @@ FUNCTION {format.number.series}
 	  number *
 	  series empty$
 	    { "there's a number but no series in " cite$ * warning$ }
-	    { " in " * series * }
+	    { " en " * series * }
 	  if$
 	}
       if$
@@ -437,7 +437,7 @@ FUNCTION {format.chapter.pages}
 FUNCTION {format.in.ed.booktitle}
 { booktitle empty$
     { "" }
-    { "in " booktitle emphasize *
+    { "en " booktitle emphasize *
       editor empty$
 	'skip$
 	{ " (" * format.editors * ")" * }
@@ -504,10 +504,10 @@ FUNCTION {format.article.crossref}
 	  warning$
 	  ""
 	}
-	{ "in {\em " journal * "\/}" * }
+	{ "en {\em " journal * "\/}" * }
       if$
     }
-    { "in " key * }
+    { "en " key * }
   if$
   " \cite{" * crossref * "}" *
 }
@@ -521,7 +521,7 @@ FUNCTION {format.crossref.editor}
 	'skip$
 	{ editor #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
 	    { " {\em et~al.}" * }
-	    { " and " * editor #2 "{vv~}{ll}" format.name$ * }
+	    { " y " * editor #2 "{vv~}{ll}" format.name$ * }
 	  if$
 	}
       if$
@@ -532,10 +532,10 @@ FUNCTION {format.crossref.editor}
 FUNCTION {format.book.crossref}
 { volume empty$
     { "empty volume in " cite$ * "'s crossref of " * crossref * warning$
-      "In "
+      "En "
     }
     { "Vol.~" volume *
-      " of " *
+      " de " *
     }
   if$
   editor empty$
@@ -571,10 +571,10 @@ FUNCTION {format.incoll.inproc.crossref}
 	    { "in {\em " booktitle * "\/}" * }
 	  if$
 	}
-	{ "in " key * }
+	{ "en " key * }
       if$
     }
-    { "in " format.crossref.editor * }
+    { "en " format.crossref.editor * }
   if$
   " \cite{" * crossref * "}" *
 }
