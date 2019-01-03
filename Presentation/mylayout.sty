@@ -21,12 +21,69 @@
 %\edef\logoeps{teikal_logo.eps}
 \edef\logopng{Logo_U.png}
 
+\makeatletter
+\def\insertminiframescurrentsection{%
+  \def\sectionentry##1##2##3##4##5{}
+  \def\slideentry##1##2##3##4##5##6{%
+    %section number, subsection number, slide number, first/last frame, page number, part number
+    \ifnum##6=\c@part\ifnum##1=\c@section\ifnum##2>0\ifnum##3>0%
+      \advance\beamer@xpos by1\relax%
+    \hbox to 0pt{%
+      \beamer@tempdim=-\beamer@vboxoffset%
+      \advance\beamer@tempdim by-\beamer@boxsize%
+      \multiply\beamer@tempdim by\beamer@ypos%
+      \raise\beamer@tempdim\hbox{%
+        \beamer@tempdim=\beamer@boxsize%
+        \multiply\beamer@tempdim by\beamer@xpos%
+        \advance\beamer@tempdim by -\beamer@boxsize%
+        \advance\beamer@tempdim by 1pt%
+        \kern\beamer@tempdim
+        \global\beamer@section@min@dim\beamer@tempdim
+        \hbox{\beamer@link(##4){%
+            \usebeamerfont{mini frame}%
+            \ifnum\c@section=##1%
+              \ifnum\c@subsection=##2%
+                \usebeamercolor[fg]{mini frame}%
+                \ifnum\c@subsectionslide=##3%
+                  \usebeamertemplate{mini frame}%\beamer@minislidehilight%
+                \else%
+                  \usebeamertemplate{mini frame in current subsection}%\beamer@minisliderowhilight%
+                \fi%
+              \else%
+                \usebeamercolor{mini frame}%
+                %\color{fg!50!bg}%
+                \usebeamertemplate{mini frame in other subsection}%\beamer@minislide%
+              \fi%
+            \else%
+              \usebeamercolor{mini frame}%
+              %\color{fg!50!bg}%
+              \usebeamertemplate{mini frame in other subsection}%\beamer@minislide%
+            \fi%
+          }}}\hskip-10cm plus 1fil%
+    }\fi\fi\fi%
+   \ignorespaces
+    }
+  \vbox{{%
+    \usebeamerfont{section in head/foot}\usebeamercolor[fg]{section in head/foot}%
+    \beamer@xpos=0\relax%
+    \beamer@ypos=0\relax%
+    \hbox{\setbox\beamer@sectionbox=\hbox{\kern1sp}%
+      \ht\beamer@sectionbox=1.875ex%
+      \dp\beamer@sectionbox=0.75ex%
+        \hskip-1.875ex plus-1fill%
+        \global\beamer@section@min@dim\z@
+        \dohead%
+        \beamer@section@set@min@width
+      \box\beamer@sectionbox\hfil\hskip.3cm}%
+  }}}
+
 \newcommand{\setTeipelLayout}[1]{
 	% choose Beamer theme
 	
 		\usetheme{Antibes}
 		\useoutertheme[subsection=false]{miniframes}
 		\setbeamertemplate{navigation symbols}{}
+		
 		%\usetheme{Warsaw} %<-- well known blue theme
 		%\usetheme{default}\usecolortheme{beaver}%\useoutertheme{default}
 		%\usetheme{PaloAlto}
@@ -57,6 +114,8 @@
 		%\usetheme{Szeged}
 		%\usetheme{Boadilla}
 		%\usetheme{AnnArbor}
+		
+		
     % Use new logo (and colors)
     \IfSubStr{#1}{newlogo}%
     	{%
@@ -125,6 +184,27 @@
             	\end{tikzpicture}%
             }%
         }{}
+
+        %------------------------------------------------------
+
+  
+  
+  \setbeamertemplate{headline}
+{
+  %\pgfuseshading{beamer@barshade}\vskip-5ex% Remove this line if you don't want a shadow below the headline
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.65ex,dp=1.5ex,left]{section in head/foot}%
+    \usebeamerfont{section in head/foot}\hspace*{3ex}\insertsectionhead
+  \end{beamercolorbox}%
+ % \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.65ex,dp=1.5ex,left]{subsection in head/foot}%
+%    \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertminiframescurrentsection
+%  \end{beamercolorbox}
+}%
+  \vskip0pt%
+}
+
+%-----------------------------------------------------
 }
 
 \newcommand{\supervisor}[3]{
@@ -132,6 +212,8 @@
 	\logo{\begin{tabular}{c}  \color{mycolor}\scalebox{1.7}{\insertframenumber/\inserttotalframenumber} \end{tabular}}
 	\institute{ Escuela de Física\\Facultad de Ciencias \\ Universidad Industrial de Santander\\[10pt] \scalebox{1}{#1: #2}}
 }
+
+
 
 
 
