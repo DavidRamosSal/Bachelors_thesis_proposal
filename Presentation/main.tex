@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Based one the "beamer-greek-two" template provided 
+%% by the Laboratory of Computational Mathematics, 
+%% Mathematical Software and Digital Typography, 
+%% Department of Mathematics, University of the Aegean
+%% (http://myria.math.aegean.gr/labs/dt/)
+%%
+%% Adapted by John Liaperdos, October-November 2014
+%% (ioannis.liaperdos@gmail.com)
+%%
+%% Last update: 26/11/2014
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{naturalnames}{hyperref}
+\documentclass[11pt]{beamer} 
+%\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+
+%%% FONT SELECTION %%%%%%%%%%%%%%%%%
+%%% we choose a sans font %%%%%%%%%%
+%\usepackage{kmath,kerkis} 
+%\usepackage[default]{gfsneohellenic} 
+\usefonttheme{professionalfonts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+%%
+% load TEI-Pel - specific layout
+\usepackage{mylayout}
+\setTeipelLayout{draft}% options: "draft", "newlogo"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thesis Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% title
+		\title[Estructura estelar de objetos compactos]{Estructura estelar de objetos compactos con una ecuación de estado numérica}	
+	% author 
+    % (In the mandatory argument "{}", separate multiple
+    % authors with "\and" - use "\\" for better author name formatting
+    % in the title page. Names in latin should be formatted using the
+    % \textlatin{name} macro. In the optional argument "[]" include all
+	% author names, with no "\and" or text formatting macros.)
+	% Example: 
+    %\author[Κ. Δημητρίου Albert Einstein]{Κωνσταντίνος Δημητρίου \and \textlatin{Albert Einstein}}
+		\author[David Ramos]{David Ramos}
+	% supervisor	
+		\supervisor{Director}{Luis Núñez}
+%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% typeset front slides
+	\typesetFrontSlides
+
+%%%%%%%%%%%%%%%%
+% Your Slides Start here:
+\section{Introduction}
+\begin{frame}{Some math}
+    \begin{equation}
+        G_{\mu\nu}=\frac{8\pi G}{c^2} T_{\mu\nu}
+    \end{equation}
+\end{frame}
+
+
+\begin{frame}{Bibliografía}
+
+\end{frame}
+
+
+\end{document}
