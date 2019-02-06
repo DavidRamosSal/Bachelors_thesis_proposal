@@ -17,6 +17,12 @@
 
 \usepackage{xstring}
 \usepackage{calculator}
+\usepackage[font=footnotesize]{caption}
+\usepackage{subcaption}
+\captionsetup[figure]{labelformat=empty}
+\usepackage{wrapfig}
+\usepackage{adjustbox}
+
 
 %\edef\logoeps{teikal_logo.eps}
 \edef\logopng{Logo_U.png}
@@ -218,11 +224,11 @@
 
 
 \newcommand{\typesetFrontSlides}{
-	\begin{frame}[plain]
+	\begin{frame}[plain,noframenumbering]
 	\date{}
 	  \titlepage
 	\end{frame}
-	\begin{frame}[plain]{Contenido}
+	\begin{frame}[plain,noframenumbering]{Contenido}
 	  \tableofcontents
 	\end{frame}
 }
@@ -251,5 +257,7 @@
   	\fi%
 }
 \makeatother
+
+
 
 \endinput
