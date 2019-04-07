@@ -39,6 +39,7 @@
 
 \usepackage{epstopdf}
 \usepackage{graphicx}
+\usepackage{pgfgantt}
 \graphicspath{{./figures/}}
 
 %%
@@ -76,17 +77,18 @@
 
 
 \begin{frame}{Formación estelar}
+    \centering
     \begin{figure}
     \centering
-    \begin{minipage}{.5\textwidth}
+    \begin{minipage}{.52\linewidth}
         \centering
         \includegraphics[width=.9\linewidth]{barnard.jpg}
         \captionof{figure}{Barnard 68. Fuente: ESO}
     \end{minipage}%
-    \begin{minipage}{.5\textwidth}
+    \begin{minipage}{.52\linewidth}
         \centering
         \includegraphics[width=0.9\linewidth]{eagle.jpg}
-        \captionof{figure}{Nébula del águila. Fuente: HST}
+        \captionof{figure}{Nebulosa del águila. Fuente: HST}
     \end{minipage}
     \end{figure}
 \end{frame}
@@ -95,23 +97,24 @@
 \begin{frame}{Evolución estelar}
 \begin{figure}
     \centering
-    \includegraphics[width=0.55\linewidth,height=0.6\linewidth]{H-R_diagram.pdf}
-    \caption{Diagrama de Hertzsprung-Russell. Fuente:}
+    \includegraphics[page=1,width=0.55\linewidth]{H-R_diagram_1.pdf}
+    \caption{\centering Diagrama de Hertzsprung-Russell. Fuente: commons.wikimedia.org/
+    wiki/File:H-R\_diagram.svg}
 \end{figure}
     
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}{Trayectorias evolutivas}
     \begin{figure}
-        \centering
-        \includegraphics[width=0.7\linewidth]{evoltracks.jpg}
-        \caption{Trayectorias evolutivas. Fuente:}
-    \end{figure}
+    \centering
+    \includegraphics[page=2,width=0.55\linewidth]{H-R_diagram_1.pdf}
+    \caption{Trayectorias evolutivas}
+\end{figure}
 \end{frame}
 
 
 
-\begin{frame}{Supernova}
+\begin{frame}{Supernovas}
     \begin{figure}
         \centering
         \includegraphics[width=0.95\linewidth]{disc.pdf}
@@ -124,7 +127,7 @@
 \begin{table}[]
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{ccccc}
-\begin{tabular}[c]{@{}c@{}}Colapso del\\ núcleo de hierro\end{tabular} & $\longrightarrow$ & \begin{tabular}[c]{@{}c@{}}¿Liberación? de energía\\ potencial gravitacional\end{tabular} & $\longrightarrow$ & \begin{tabular}[c]{@{}c@{}}Explosión de \\ la estrella\end{tabular}
+\begin{tabular}[c]{@{}c@{}}Colapso del\\ núcleo de hierro\end{tabular} & $\Longrightarrow$ & \begin{tabular}[c]{@{}c@{}}Energía potencial\\  gravitacional es liberada\end{tabular} & $\Longrightarrow$ & \begin{tabular}[c]{@{}c@{}}Explosión de \\ la estrella\end{tabular}
 \end{tabular}
 \end{adjustbox}
 \end{table}
@@ -143,13 +146,13 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
 \begin{frame}{Estrellas de neutrones}
     \begin{figure}
         \centering
-        \includegraphics[width=0.6\linewidth]{crab.png}
+        \includegraphics[width=0.65\linewidth]{crab.png}
         \caption{ Nebulosa del cangrejo, Rayos X. Fuente: Chandra X-Ray Observatory}
     \end{figure}
 \end{frame}
 
 \begin{frame}{Condiciones extremas}
-    Modelo estándar de estrellas de neutrones:
+    Modelo canónico de una estrella de neutrones:
     \begin{equation}
         M = 1.4 \,M _ { \odot },\quad R = 10 \,\mathrm { km }, \quad r_{\mathrm{g}}=4.13\,\mathrm{km},
     \end{equation}
@@ -162,7 +165,7 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
     \end{equation}
 \end{frame}
 
-\section{Estructura Estelar}
+\section{Estructura estelar}
 
 \begin{frame}{Equilibrio hidrostático}
     \begin{wrapfigure}{l}{0.4\linewidth}
@@ -242,16 +245,16 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
     \begin{equation}
         e ^ { 2 \nu } = 1 - \frac { 2 M } { r }\quad \text{y}\quad - e ^ { 2 \lambda } = - e ^ { - 2 \nu } = - \left( 1 - \frac { 2 M } { r } \right) ^ { - 1 },
     \end{equation}
-    la métrica para $r<R$ será entonces
+    la métrica para $r>R$ será entonces
     \begin{equation}
         \dd{s} ^ { 2 } =  \left( 1 - \frac { 2 M } { r } \right) \dd{t} ^ { 2 } - \left( 1 - \frac { 2 M } { r } \right) ^ { - 1 } \dd{r} ^ { 2 }  - r ^ { 2 }\left( \dd{\theta} ^ { 2 } +  \sin ^ { 2 } \theta \dd{\phi} ^ { 2 } \right).
     \end{equation}
     
-    \hyperlink{extsol}{\beamerbutton{Derivación}}
+    %\hyperlink{extsol}{\beamerbutton{Derivación}}
 \end{frame}
 
 \begin{frame}{Solución interior}
-    Modelando la estrella como un fluido ideal (\hyperlink{idealfluid}{\beamerbutton{ver más}})
+    Modelando la estrella como un fluido ideal %(\hyperlink{idealfluid}{\beamerbutton{ver más}})
     \begin{equation}
          T _ { 0 } ^ { 0 } = \rho(r) , \quad T _ { i } ^ { i } = - P(r) \quad ( i=1,2,3 ),
     \end{equation}
@@ -271,13 +274,13 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
         \quad\quad\,\,\,\,\,\,\dv{\nu}{r} = \frac { m  + 4 \pi r ^ { 3 } P  } { r ( r - 2 m  ) },
     \end{align}
     \end{subequations}
-    \hyperlink{intsol}{\beamerbutton{Derivación}}
+    %\hyperlink{intsol}{\beamerbutton{Derivación}}
 \end{frame}
 
-\begin{frame}{}
+\begin{frame}[label=back]{}
     donde se definió la función de masa o masa de Misner
     \begin{equation}
-        m ( r ) \equiv 4 \pi \int _ { 0 } ^ { r } \rho ( r ) r ^ { 2 }     \dd{r}. \quad \hyperlink{masa}{\beamerbutton{Nota}}
+        m ( r ) \equiv 4 \pi \int _ { 0 } ^ { r } \rho ( r ) r ^ { 2 }     \dd{r}. \quad %\hyperlink{masa}{\beamerbutton{Nota}}
     \end{equation}
     
     \vspace{0.7cm}
@@ -286,10 +289,14 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
     
     Re-escribiendo el gradiente de presión 
     \begin{equation}
-        \dv{P}{r} =  - \frac { G m } { r ^ { 2 } } \rho \left[ 1 + \frac { P  } {c ^ { 2 } \rho  } \right] \left[ 1 + \frac { 4 \pi r ^ { 3 } P } { m c ^ { 2 } } \right]  \left[ 1 - \frac { 2 G m } { c ^ { 2 } r } \right] ^ { - 1 }.
+        \dv{P}{r} =  - \frac { G m } { r ^ { 2 } } \rho \left[ 1 + \frac { P  } {c ^ { 2 } \rho  } \right] \left[ 1 + \frac { 4 \pi r ^ { 3 } P } { m c ^ { 2 } } \right]  \left[ 1 - \frac { 2 G m } { c ^ { 2 } r } \right] ^ { - 1 },
+    \end{equation}
+    Si $c^2 \rho\gg P$, $mc^2 \gg 4\pi r^3P$ y $ \frac{2Gm}{c^2r}\ll 1$: 
+    \begin{equation}
+        \dv{P}{r} = - \frac { G m  } { r ^ { 2 } } \rho.
     \end{equation}
 \end{frame}
-
+    
 \begin{frame}{Resolviendo el sistema}
     Las ecuaciones de TOV son un IVP
     \begin{table}[]
@@ -300,7 +307,7 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
             \end{equation*}}     &       $\longrightarrow$      &       $P(0)=P_c$ \\
             \parbox{4cm}{\begin{equation*}
                 \dv{\nu}{r} = \frac { m  + 4 \pi r ^ { 3 } P  } { r ( r - 2 m  ) }
-            \end{equation*}}  &       $\longrightarrow$      &       $\nu(0)=0$
+            \end{equation*}}  &       $\longrightarrow$      &       $\nu(0)=cte$
         \end{tabular}
     \end{table}
     \alert{Pero...} necesitamos una ecuación de estado $P(\rho)$ .
@@ -310,19 +317,123 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
 \begin{frame}{Composición de una estrella de neutrones}
     \begin{figure}
         \centering
-        \includegraphics[width=0.7\linewidth]{neutronstar.pdf}
+        \includegraphics[width=0.75\linewidth]{neutronstar.pdf}
+        \caption{\centering Estructura de estrellas de neutrones. Fuente: F. Weber, M. Orsaria, H. Rodrigues y S. H. Yang, 2012}
     \end{figure}
+    
 \end{frame}
 
 \begin{frame}{Una variedad de fases}
+    \vspace{0.3cm}
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{Density.pdf}
+        \caption{Fuente: N. Chamel y P. Haensel, 2008}
     \end{figure}
 \end{frame}
 
+
+
 \begin{frame}{Ecuación de estado}
-    \begin{textblock*}{0.5pt}(60mm,20mm)
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.65\linewidth]{EoS.jpg}
+        \caption{Fuente: F. Özel \& F. Paulo, 2001.}
+        %\label{fig:my_label}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Ecuación de estado}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{DEOS.png}
+        \caption{http://xtreme.as.arizona.edu/NeutronStars/}
+        %\label{fig:my_label}
+    \end{figure}
+\end{frame}
+
+
+
+\section{Condiciones de aceptabilidad}
+\begin{frame}{Condicionando los posibles modelos \footnotemark}
+    \footnotetext[2]{B. V. Ivanov. Analytical study of anisotropic compact star models.}
+    \begin{itemize}
+        \item \textbf{C1} \\
+            Las funciones métricas son positivas y deben ser finitas y libres de singularidades en el
+            interior de la estrella.
+        \item \textbf{C2 Acomplamiento}  \\
+            \begin{equation}
+                e ^ { -2 \lambda(R) } =  e ^ {  2 \nu(R) } =  1 - \frac { 2 M } { R }.
+            \end{equation}
+        \item \textbf{C3 Corrimiento al rojo} \\
+            \begin{equation}
+                z(r)\equiv e^{-\nu(r)}-1,
+            \end{equation}
+            debe disminuir con el incremento de r.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+    \begin{itemize}
+        \item \textbf{C4} \\
+        La densidad de energía y la presión deben ser positivas dentro de la estrella.
+        \item \textbf{C5} \\
+        La densidad de energía y la presión deben alcanzar un máximo en el centro ($\rho'(0)=P'(0)=0$) y deben decrecer monótonamente hacia afuera.
+        \item \textbf{C6} \\
+        La solución debe satisfacer la condición de energía dominante (DEC) 
+        \begin{equation}
+         \rho \geq P.   
+        \end{equation}
+        \item \textbf{C7 Causalidad} \\ 
+        \begin{equation}
+            v^2=\dv{P}{\rho}\leq 1.
+        \end{equation}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{}
+    \begin{itemize}
+        \item \textbf{C8 Estabilidad ante pulsaciones radiales I} \\
+            \begin{equation}
+                \Gamma = \frac { \rho + P  } { P } \dv{P}{\rho} \geq \frac{4}{3}.
+            \end{equation}
+        \item \textbf{C9 Estabilidad ante cracking} \\
+            \begin{equation}
+                \dv{P}{r}\leq 0.
+            \end{equation}
+        \item \textbf{C10 Estabilidad ante pulsaciones radiales II} \\
+            \begin{equation}
+                \frac { \partial M } { \partial \rho _ { c } } > 0.
+            \end{equation}
+        \item \textbf{C11 Estabilidad ante movimientos convectivos}\footnote{H. Hernández, L. A. Núñez, A.
+Vásquez-Ramírez.} \\
+            \begin{equation}
+                \dv[2]{\rho }{r} \leq 0.
+            \end{equation}
+    \end{itemize}
+\end{frame}
+
+\section{Planteamiento del problema}
+
+
+\begin{frame}[plain]{Planteamiento del problema}
+        
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{staticm.pdf}
+    \end{figure}
+    \centering
+    %\Large Usar las condiciones de aceptabilidad para determinar si los modelos estáticos obtenidos con las ecuaciones de estado son útiles.
+    \begin{pgfpicture}{0}{0}{12.8cm}{3.9cm}
+    \pgfputat{\pgfxy(10.55,1.38)}{\pgfbox[left,base]{ %
+      \scriptsize{\insertframenumber{}/\inserttotalframenumber}}}
+    \end{pgfpicture}
+\end{frame}
+\begin{frame}{}
+
+\begin{textblock*}{0.5pt}(60mm,20mm)
     ALF
     \end{textblock*}
     \begin{textblock*}{0.5pt}(50mm,25mm)
@@ -370,81 +481,8 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
     \begin{textblock*}{0.5pt}(60mm,85mm)
     QMC
     \end{textblock*}
-
-\end{frame}
-
-\section{Condiciones de aceptabilidad}
-\begin{frame}{Condicionando los posibles modelos}
-    \begin{itemize}
-        \item \textbf{C1} \\
-            Las funciones métricas son positivas y deben ser finitas y libres de singularidades en el
-            interior de la estrella.
-        \item \textbf{C2 Acomplamiento}  \\
-            \begin{equation}
-                e ^ { -2 \lambda(R) } =  e ^ {  2 \nu(R) } =  1 - \frac { 2 M } { R }.
-            \end{equation}
-        \item \textbf{C3 Corrimiento al rojo} \\
-            \begin{equation}
-                z(r)\equiv e^{-\nu(r)}-1,
-            \end{equation}
-            debe disminuir con el incremento de r.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{}
-    \begin{itemize}
-        \item \textbf{C4} \\
-        La densidad de energía y la presión deben ser positivas dentro de la estrella.
-        \item \textbf{C5} \\
-        La densidad de energía y la presión deben alcanzar un máximo en el centro ($\rho'(0)=P'(0)=0$) y deben decrecer monótonamente hacia afuera.
-        \item \textbf{C6} \\
-        La solución debe satisfacer la condición de energía dominante (DEC) $\rho \geq |P|$.
-        \item \textbf{C7 Causalidad} \\ 
-        \begin{equation}
-            v^2=\dv{P}{\rho}\leq 1.
-        \end{equation}
-    \end{itemize}
-\end{frame}
-
-
-\begin{frame}{}
-    \begin{itemize}
-        \item \textbf{C8 Estabilidad ante pulsaciones radiales I} \\
-            \begin{equation}
-                \Gamma = \frac { \rho + P  } { P } \dv{P}{\rho} \geq \frac{4}{3}.
-            \end{equation}
-        \item \textbf{C9 Estabilidad ante cracking} \\
-            \begin{equation}
-                \dv{P}{r}\leq 0.
-            \end{equation}
-        \item \textbf{C10 Estabilidad ante pulsaciones radiales II} \\
-            \begin{equation}
-                \frac { \partial M } { \partial \rho _ { c } } > 0.
-            \end{equation}
-        \item \textbf{C11 Estabilidad ante movimientos convectivos} \\
-            \begin{equation}
-                \dv[2]{\rho }{r} \leq 0.
-            \end{equation}
-    \end{itemize}
-\end{frame}
-
-\section{Planteamiento del problema}
-\begin{frame}[plain]{Planteamiento del problema}
     \vspace{1cm}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\linewidth]{staticm.pdf}
-    \end{figure}
-    \pause
-    \vspace{1cm}
-    ¿Cómo escoger entre la variedad de ecuaciones de estado al construir modelos estáticos?
-    \pause
-    \alert{Condiciones de aceptabilidad}
     
-    \begin{pgfpicture}{0}{0}{12.8cm}{3.2cm}
-    \pgfputat{\pgfxy(10.55,1.38)}{\pgfbox[left,base]{ %
-      \scriptsize{\insertframenumber{}/\inserttotalframenumber}}}
-    \end{pgfpicture}
 \end{frame}
 
 \section{Objetivos}
@@ -496,33 +534,65 @@ usando $M _ { c } \approx 1.5 M _ { \odot }$, $R _ { c } \approx 10 ^ { 4 } \mat
     \end{enumerate}
 \end{frame}
 
-\begin{frame}[plain,noframenumbering]{Bibliografía}
-
+\begin{frame}{Cronograma}
+    \definecolor{royalazure}{rgb}{0.0, 0.22, 0.66}
+\centering
+\vspace{-0.5cm}
+\noindent\resizebox{0.53\textwidth}{!}{
+\begin{ganttchart}[
+    canvas/.append style={line width=.60pt,dotted},
+    hgrid style/.style={line width=.60pt,dotted},
+    vgrid={*1{ line width=.60pt,dotted}},
+    title/.style={draw=none, fill=none},
+    title label font=\bfseries\footnotesize,
+    title label node/.append style={below=7pt},
+    include title in canvas=false,
+    group label font=\small\color{black},
+    bar/.append style={fill=royalazure},
+    group left shift=0,
+    group right shift=0,
+    bar height=.3,
+    group peaks tip position=0,
+    bar label node/.append style={left=0.6cm}
+  ]{1}{4}
+  \gantttitle[
+    title label node/.append style={below left=7pt and -7pt}
+  ]{\quad Mes:\quad 1}{1}
+  \gantttitlelist{2,...,4}{1} \\ 
+  \ganttbar{Actividad 1}{1}{1} \\[grid]
+  \ganttbar{Actividad 2}{1}{2} \\[grid]
+  \ganttbar{Actividad 3}{2}{3} \\[grid]
+  \ganttbar{Actividad 4}{3}{4} \\[grid]
+  \ganttbar{Actividad 5}{3}{4}
+\end{ganttchart}}
 \end{frame}
+%\begin{frame}[plain,noframenumbering]{Bibliografía}
+
+%\end{frame}
 
 
-\begin{frame}[plain,noframenumbering,label=extsol]{Derivación de la solución exterior de Schwarzschild}
+%\begin{frame}[plain,noframenumbering,label=extsol]{Derivación de la solución exterior de Schwarzschild}
     
-\end{frame}
+%\end{frame}
 
-\begin{frame}[plain,noframenumbering, label=idealfluid]{Fluidos Ideales}
+%\begin{frame}[plain,noframenumbering, label=idealfluid]{Fluidos Ideales}
     
-\end{frame}
+%\end{frame}
 
-\begin{frame}[plain,noframenumbering,label=intsol]{Derivación de la solución interior: ecuaciones de TOV}
-    \begin{align}
-        G _ { 0 } ^ { 0 } =& -e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } - \frac { 2 \lambda ^ { \prime } } { r } \right) + \frac { 1 } { r ^ { 2 } } = 8 \pi  \rho ( r ),  \\
-         G _ { 1 } ^ { 1 } =& -e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } + \frac { 2 \nu ^ { \prime } } { r } \right) + \frac { 1 } { r ^ { 2 } } = -8 \pi  P ( r ),  \\
-         G _ { 2 } ^ { 2 } =& -e ^ { - 2 \lambda } \left( \nu ^ { \prime \prime } + \nu ^ { \prime 2 } + \lambda ^ { \prime } \nu ^ { \prime } + \frac { \nu ^ { \prime } - \lambda ^ { \prime } } { r } \right) = -8 \pi  P ( r ),  \\
-          G _ { 3 } ^ { 3 } =& G _ { 2 } ^ { 2 } = -8 \pi  P ( r ).
-    \end{align}
-\end{frame}
+%\begin{frame}[plain,noframenumbering,label=intsol]{Derivación de la solución interior: ecuaciones de TOV}
+ %   \begin{align}
+  %      G _ { 0 } ^ { 0 } =& -e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } - \frac { 2 \lambda ^ { \prime } } { r } \right) + \frac { 1 } { r ^ { 2 } } = 8 \pi  \rho ( r ),  \\
+  %       G _ { 1 } ^ { 1 } =& -e ^ { - 2 \lambda } \left( \frac { 1 } { r ^ { 2 } } + \frac { 2 \nu ^ { \prime } } { r } \right) + \frac { 1 } { r ^ { 2 } } = -8 \pi  P ( r ),  \\
+  %       G _ { 2 } ^ { 2 } =& -e ^ { - 2 \lambda } \left( \nu ^ { \prime \prime } + \nu ^ { \prime 2 } + \lambda ^ { \prime } \nu ^ { \prime } + \frac { \nu ^ { \prime } - \lambda ^ { \prime } } { r } \right) = -8 \pi  P ( r ),  \\
+    %      G _ { 3 } ^ { 3 } =& G _ { 2 } ^ { 2 } = -8 \pi  P ( r ).
+%    \end{align}
+%\end{frame}
 
-\begin{frame}[plain,noframenumbering,label=masa]{Sobre la función de masa}
-    $m(r)$ \textbf{NO} es la suma de las energías propias de los elementos de fluido
-    \begin{equation}
-        4 \pi \int _ { 0 } ^ { r } \rho ( r ) e^{2\lambda}r ^ { 2 }     \dd{r}.
-    \end{equation}
-\end{frame}
+%\begin{frame}[plain,noframenumbering,label=masa]{Sobre la función de masa}
+ %   $m(r)$ \textbf{NO} es la suma de las energías propias de los elementos de fluido
+  %  \begin{equation}
+   %     4 \pi \int _ { 0 } ^ { r } \rho ( r ) e^{2\lambda}r ^ { 2 }     \dd{r}. \quad \hyperlink{back}{\beamerbutton{Back}}
+%    \end{equation}
+%\end{frame}
 
 \end{document}
